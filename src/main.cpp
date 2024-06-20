@@ -48,7 +48,7 @@ int main() {
 
     restinio::run(
             restinio::on_this_thread<my_server_traits>()
-                    .address("127.0.0.1")
+                    .address("0.0.0.0")
                     .port(7680)
                     .request_handler(std::move(router)));
 
